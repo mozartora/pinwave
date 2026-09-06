@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
-  <!-- PinPulse mark: map pin + pulse line. Amber on charcoal. -->
+  <!-- Pinwave mark: map pin + pulse line. Amber on charcoal. -->
   <rect width="96" height="96" rx="22" fill="#0E0E11"/>
   <path fill="#F2A66B" d="M48 18.5a20 20 0 1 0 0.001 0z M35.69 54.26h24.62L48 78z"/>
   <path fill="none" stroke="#0E0E11" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"

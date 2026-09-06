@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Pinwave mark: map pin + pulse line, centered in the adaptive-icon
+         safe zone. Independent branding — does not imitate Pinterest. -->
+    <path
+        android:fillColor="#F2A66B"
+        android:pathData="M54,34.5a19,19 0 1,0 0.001,0z M37.9,64.75 L70.1,64.75 54,84z" />
+
+    <path
+        android:strokeColor="#0E0E11"
+        android:strokeWidth="5.2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M39,53.5 L47.6,53.5 L50.9,45 L56.6,62 L59.9,53.5 L68.5,53.5" />
+</vector>
