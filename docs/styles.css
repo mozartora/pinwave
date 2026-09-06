@@ -41,6 +41,15 @@ nav {
   letter-spacing: 0.02em;
   color: var(--text);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 28px;
+  width: 28px;
+  border-radius: 8px;
 }
 
 .logo span { color: var(--accent); }
