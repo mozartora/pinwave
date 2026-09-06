@@ -1,0 +1,223 @@
+:root {
+  --bg: #0e0e11;
+  --surface: #17171c;
+  --surface-high: #1f1f26;
+  --outline: #2c2c34;
+  --text: #f2f0eb;
+  --muted: #9b98a3;
+  --faint: #6b6875;
+  --accent: #f2a66b;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  font-size: 14px;
+}
+
+.logo {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.logo span { color: var(--accent); }
+
+nav .links a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 24px;
+  transition: color 0.2s;
+}
+
+nav .links a:hover { color: var(--text); }
+
+.hero { padding: 96px 0 80px; text-align: center; }
+
+.overline {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: clamp(42px, 7vw, 72px);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.hero p.sub {
+  margin: 24px auto 0;
+  max-width: 520px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 36px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(242, 166, 107, 0.12);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.shots {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  padding: 40px 0 88px;
+  flex-wrap: wrap;
+}
+
+.shots img {
+  width: 220px;
+  border-radius: 24px;
+  border: 1px solid var(--outline);
+  background: var(--surface);
+  transition: transform 0.35s ease;
+}
+
+.shots img:hover { transform: translateY(-6px); }
+
+section { padding: 72px 0; }
+
+h2 {
+  font-family: var(--serif);
+  font-size: clamp(30px, 4.5vw, 44px);
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.lead { color: var(--muted); max-width: 560px; font-size: 17px; }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.card .glyph { font-size: 22px; margin-bottom: 14px; }
+
+.card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card p { color: var(--muted); font-size: 14.5px; }
+
+.compliance {
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 48px;
+}
+
+.compliance h2 { font-size: clamp(26px, 4vw, 36px); }
+
+.compliance ul {
+  list-style: none;
+  margin-top: 28px;
+}
+
+.compliance li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--outline);
+  color: var(--muted);
+  display: flex;
+  gap: 14px;
+  font-size: 15.5px;
+}
+
+.compliance li:last-child { border-bottom: none; }
+
+.compliance li::before {
+  content: "✓";
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+footer {
+  border-top: 1px solid var(--outline);
+  padding: 40px 0 56px;
+  margin-top: 48px;
+  color: var(--faint);
+  font-size: 13.5px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+footer a { color: var(--muted); text-decoration: none; margin-right: 20px; }
+footer a:hover { color: var(--text); }
+
+/* legal pages */
+.legal { max-width: 680px; padding: 64px 0 96px; }
+
+.legal h1 { font-size: clamp(32px, 5vw, 48px); margin-bottom: 8px; }
+
+.legal .updated { color: var(--faint); font-size: 13px; margin-bottom: 40px; display: block; }
+
+.legal h2 {
+  font-family: var(--sans);
+  font-size: 19px;
+  margin: 40px 0 12px;
+}
+
+.legal p { color: var(--muted); margin-bottom: 16px; font-size: 15.5px; }
+
+.legal ul { color: var(--muted); margin: 0 0 16px 20px; font-size: 15.5px; }
+
+.legal li { margin-bottom: 8px; }
+
+.back {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 560px) {
+  .shots img { width: 44%; }
+  .compliance { padding: 32px 24px; }
+  .hero { padding: 64px 0 48px; }
+}

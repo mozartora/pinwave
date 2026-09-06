@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — PinPulse</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="index.html">Pin<span>Pulse</span></a>
+      <div class="links"><a href="index.html">Home</a></div>
+    </nav>
+
+    <main class="legal">
+      <a class="back" href="index.html">← Back to PinPulse</a>
+      <h1>Privacy Policy</h1>
+      <span class="updated">Last updated: September 2026</span>
+
+      <h2>Overview</h2>
+      <p>
+        PinPulse is built local-first. What you do in the app stays on your device
+        unless a feature explicitly needs the network. This policy describes what
+        the app stores, what it fetches, and what it never does.
+      </p>
+
+      <h2>What is stored locally on your device</h2>
+      <ul>
+        <li>Your saved trends and collections</li>
+        <li>Your preferences (appearance, notifications, subscription plan)</li>
+        <li>Your recent searches</li>
+      </ul>
+      <p>
+        This data lives in a local database on your device. In the current build
+        there is no PinPulse account server at all — nothing above is uploaded.
+      </p>
+
+      <h2>What is fetched over the network</h2>
+      <ul>
+        <li>Trend and Pin content from the official Pinterest API, only after you connect your Pinterest account via OAuth</li>
+        <li>Clearly-labeled demo content while Pinterest is not connected</li>
+      </ul>
+
+      <h2>Pinterest data handling</h2>
+      <p>
+        When you connect Pinterest, you authorize PinPulse on Pinterest's own page.
+        PinPulse receives a limited access token — never your password — and requests
+        only the scopes it needs. Pinterest content is cached briefly with expiration
+        and deleted automatically; it is not stored long-term. Tokens are kept in
+        encrypted storage and are never sent to analytics services or third parties.
+      </p>
+
+      <h2>What PinPulse never does</h2>
+      <ul>
+        <li>Sell or share your data with third parties</li>
+        <li>Send Pinterest tokens to analytics providers</li>
+        <li>Scrape Pinterest or use undocumented endpoints</li>
+        <li>Build an image repository from Pinterest content</li>
+      </ul>
+
+      <h2>Your controls</h2>
+      <p>
+        Disconnect Pinterest at any time from Settings → Pinterest. Remove all local
+        data with Settings → Delete account. Uninstalling the app removes everything
+        stored on the device.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy can be sent to the developer via the contact
+        listed on the app's store listing.
+      </p>
+    </main>
+
+    <footer>
+      <div>© 2026 PinPulse</div>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="pinterest-api.html">Pinterest API Usage</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
